@@ -1,4 +1,5 @@
 import { useState, useReducer } from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../App.css'
 import ExplanationCard from './ExplanationCard'
 import lightBulbSvg from '../assets/lightBulb.svg'
@@ -25,8 +26,13 @@ function Counter() {
     dispatch({ type: 'RESET' })
   }
 
+  const navigate = useNavigate()
+
   return (
     <>
+      <button onClick={() => navigate(-1)} className="backButton">
+        ← Back
+      </button>
       {/* CARD1: How to manipulate a simple state */}
       <div className="card">
         <ExplanationCard

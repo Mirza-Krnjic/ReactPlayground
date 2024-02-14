@@ -9,14 +9,24 @@ function Home() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h1
+          style={{
+            color: 'hotpink',
+            textShadow: '2px 2px 4px #ff00ff',
+            fontSize: '50px'
+          }}
+        >
+          React Learning Path
+        </h1>
+        <div className="basicContainer">
+          <a href="https://vitejs.dev" target="_blank">
+            <img src={viteLogo} className="logo" alt="Vite logo" />
+          </a>
+          <a href="https://react.dev" target="_blank">
+            <img src={reactLogo} className="logo react" alt="React logo" />
+          </a>
+        </div>
       </div>
-      <h1>Vite + React</h1>
 
       <div className="card">
         <p>The first step to master React is to learn how State works!</p>

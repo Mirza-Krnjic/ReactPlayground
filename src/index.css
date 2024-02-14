@@ -33,24 +33,30 @@ body {
 
 button {
   border-radius: 8px;
-  border: 1px solid #007aff;
+  border: none;
   padding: 0.3em 0.6em;
   margin: 0 5px;
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 500;
   font-family: inherit;
-  background-color: #007aff;
-  color: white;
+  background-color: transparent;
+  border: 1px solid #ff80bf;
+  color: #ff80bf;
   cursor: pointer;
-  transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+  transition: background-color 0.25s, color 0.25s;
 }
 
 button:hover {
-  background-color: #0056b3;
-  border-color: #004088;
+  background-color: #ff00bf;
+  color: white;
 }
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto #0056b3;
+  outline: none;
+  box-shadow: 0 0 0 4px #ff00bf;
+}
+
+.basicContainer {
+  margin: 30px 5px;
 }
