@@ -29,6 +29,11 @@
   margin: 20px 0;
 }
 
+h2 {
+  color: palevioletred;
+  text-shadow: 2px 2px 4px #ff00ff;
+}
+
 .backButton {
   border-radius: 8px;
   border: none;

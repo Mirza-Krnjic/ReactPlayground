@@ -3,8 +3,9 @@ import { useNavigate } from 'react-router-dom'
 import '../App.css'
 import ExplanationCard from './ExplanationCard'
 import lightBulbSvg from '../assets/lightBulb.svg'
+import MainHeader from './MainHeader'
 
-function Counter() {
+function Level1() {
   // This state is used for the CARD1 example
   const [count, setCount] = useState<number>(0)
 
@@ -30,6 +31,7 @@ function Counter() {
 
   return (
     <>
+      <MainHeader />
       <button onClick={() => navigate(-1)} className="backButton">
         ← Back
       </button>
@@ -127,4 +129,4 @@ function reducer(state: StateType, action: ActionType): StateType {
   }
 }
 
-export default Counter
+export default Level1
