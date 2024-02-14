@@ -1,0 +1,18 @@
+.explanationCard {
+  position: relative;
+  padding: 1em 2em;
+  background-color: #2c1a36;
+  border-radius: 8px;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2em;
+  transition: transform 0.3s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.explanationCardSvg {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -10px;
+  left: -10px;
+}
