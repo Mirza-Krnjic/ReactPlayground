@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import '../App.css'
 import ExplanationCard from './ExplanationCard'
 import lightBulbSvg from '../assets/lightBulb.svg'
+import challangeSvg from '../assets/challange.svg'
 import MainHeader from './MainHeader'
 import Parent from './Level4Documentation/Parent'
 
@@ -21,14 +22,19 @@ function Level4() {
           text="Please, open the Level4 documentation in the Level4Documentation folder"
         />
 
-        <h2>1. Prop Drilling!</h2>
+        <ExplanationCard
+          explanationCardSvg={challangeSvg}
+          text="Challange: Here you are supposed to test all the React optimization techniques you know and prove that they work!"
+        />
+
+        <h2>Optimization Testing Ground</h2>
 
         <Parent />
-        <div>
+        <div style={{ marginTop: '20px' }}>
           A link to the related official documentation can be found{' '}
           <a
             rel="stylesheet"
-            href="https://react.dev/reference/react/useEffect"
+            href="https://react.dev/learn/updating-objects-in-state#why-is-mutating-state-not-recommended-in-react"
           >
             here
           </a>

@@ -1,15 +1,17 @@
-import { useEffect } from 'react'
-
-function Child() {
-  useEffect(() => {
-    console.log('Child rendered')
-  })
-
-  return (
-    <div className="child">
-      <h4>Child</h4>
-    </div>
-  )
+interface ChildProps {
+  increment: () => void
 }
 
-export default React.memo(Child)
+// eslint-disable-next-line react-refresh/only-export-components
+const Child: React.FC<ChildProps> = ({ increment }) => {
+  console.log('Child is re-rendering')
+
+  return <button onClick={increment}>Increment in Child</button>
+}
+
+export default Child
+
+// Hooks to test:
+// useMemo
+// useCallback
+// React.memo
