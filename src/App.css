@@ -34,11 +34,15 @@ h2 {
   text-shadow: 2px 2px 4px #ff00ff;
 }
 
+.text {
+  margin: 10px 0px;
+}
+
 .backButton {
+  width: 80px;
   border-radius: 8px;
   border: none;
   padding: 0.3em 0.6em;
-  /* margin: 10px 5px; */
   margin-right: 90%;
   margin-bottom: 20px;
   font-size: 14px;
@@ -60,4 +64,24 @@ h2 {
 .backButton:focus-visible {
   outline: none;
   box-shadow: 0 0 0 4px #ff00bf;
+}
+
+.parent {
+  padding: 1em 2em;
+  background-color: #560db6;
+  border-radius: 8px;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2em;
+  transition: transform 0.3s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.child {
+  padding: 1em 2em;
+  background-color: #32b60d;
+  border-radius: 8px;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2em;
+  transition: transform 0.3s ease-in-out, box-shadow 0.1s ease-in-out;
 }

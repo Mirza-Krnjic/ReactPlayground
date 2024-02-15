@@ -48,6 +48,40 @@ function Home() {
           Explore Effects
         </button>
       </div>
+
+      {/* Level 3 Card */}
+      <div className="card">
+        <h2>Level 3</h2>
+        <h3>Conditional Rendering</h3>
+        <p>
+          Lets explore all the ways we can accomplish conditional rendering in
+          React
+        </p>
+        <button
+          onClick={() => {
+            navigate('/Level3')
+          }}
+        >
+          Explore Effects
+        </button>
+      </div>
+
+      {/* Level 4 Card */}
+      <div className="card">
+        <h2>Level 4</h2>
+        <h3>Project Structure and Optimization</h3>
+        <p>
+          In this section we will explore all the ways one can optimize a react
+          application
+        </p>
+        <button
+          onClick={() => {
+            navigate('/Level4')
+          }}
+        >
+          Study optimization
+        </button>
+      </div>
     </>
   )
 }

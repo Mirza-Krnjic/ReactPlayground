@@ -42,6 +42,12 @@ function Level1() {
           text="The useState hook is crucial for maintaining component-specific data and
         triggering re-renders based on state changes"
         />
+        <div>
+          A link to the related official documentation can be found{' '}
+          <a rel="stylesheet" href="https://react.dev/reference/react/useState">
+            here
+          </a>
+        </div>
         <p>
           Here we use the useState hook to store and manipulate a simple state.
         </p>
@@ -85,7 +91,8 @@ function Level1() {
           <div>Reset to default stats</div>
           {/* Why not call it like this? It works right? */}
           {/* <button onClick={() => reset()}>Reset</button> */}
-          <button onClick={reset}>Reset</button>
+          <button onClick={reset}>Reset</button>A link to the related official
+          documentation can be found{' '}
         </div>
 
         <ExplanationCard
