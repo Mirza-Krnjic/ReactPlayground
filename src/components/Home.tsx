@@ -82,6 +82,20 @@ function Home() {
           Study optimization
         </button>
       </div>
+
+      {/* Level 5 Card */}
+      <div className="card">
+        <h2>Level 5</h2>
+        <h3>React Router Routing</h3>
+        <p>Lets explore the routing in the react way</p>
+        <button
+          onClick={() => {
+            navigate('/Level5')
+          }}
+        >
+          Route me
+        </button>
+      </div>
     </>
   )
 }

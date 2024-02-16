@@ -38,7 +38,7 @@ function Level2() {
       <button onClick={() => navigate(-1)} className="backButton">
         ← Back
       </button>
-      {/* CARD1: Meant to showcase useEffect behaviour */}
+      {/* Main Card Content */}
       <div className="card">
         <ExplanationCard explanationCardSvg={lightBulbSvg} text="Dummy test" />
         <div>
