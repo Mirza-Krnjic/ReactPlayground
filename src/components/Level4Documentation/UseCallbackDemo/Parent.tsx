@@ -17,12 +17,6 @@ const Parent: React.FC = () => {
   // -> What if we put "count" in the deps array?
   // }, [])
 
-  // CASE 3
-  // -> Try this one
-  // const increment = () => {
-  //   setCount((count) => count + 1)
-  // }
-
   console.log('Parent is re-rendering')
 
   return (
@@ -34,7 +28,7 @@ const Parent: React.FC = () => {
         onClick={() => setIsTriggered(!isTriggered)}
         style={{ margin: '5px' }}
       >
-        Try to trigger
+        Toggle isTrigger
       </button>
       {/* Potential cause of re-render 1: */}
       {/* When we change the isTriggered boolean the Parent needs to re-render to display the change */}

@@ -19,7 +19,7 @@ const Child: React.FC<ChildProps> = React.memo(({ increment }) => {
       }}
     >
       <h3>Child</h3>
-      <button onClick={increment}>Increment in Child</button>
+      <button onClick={increment}>Increment count from Child</button>
     </div>
   )
 })
