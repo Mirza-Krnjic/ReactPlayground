@@ -7,13 +7,9 @@ import Child from './Child' // Assuming Child is in a file named Child.js
 const Parent = () => {
   const [count, setCount] = useState(0)
 
-  const incrementCount = useCallback(() => {
-    setCount((prevCount) => prevCount + 1)
-  }, []) // Dependencies array is empty, so this callback is memoized until the component unmounts
-
   return (
     <div>
-      <Child onButtonClick={incrementCount} />
+      <Child />
       <p>Count: {count}</p>
     </div>
   )
