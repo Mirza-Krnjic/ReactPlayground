@@ -1,5 +1,24 @@
 import { useEffect, useMemo, useState } from 'react'
 
+export default function StudyUseMemo() {
+  const [reload, setReload] = useState<boolean>(false)
+
+  console.log('!!! StudyUseMemo: loaded !!!')
+
+  useEffect(() => {
+    console.log('StudyUseMemo: Ive been reloaded')
+  }, [reload])
+
+  return (
+    <>
+      <button onClick={() => setReload(!reload)} style={{ margin: '15px' }}>
+        Reload StudyUseMemo
+      </button>
+      <MainComponent />
+    </>
+  )
+}
+
 export function MainComponent() {
   // This is the main testing function
 
@@ -56,22 +75,5 @@ export function ChildComponet({ list }: ChildProps) {
         <div key={item}>{item}</div>
       ))}
     </div>
-  )
-}
-
-export default function StudyUseMemo() {
-  const [reload, setReload] = useState<boolean>(false)
-
-  console.log('!!! StudyUseMemo: loaded !!!')
-
-  useEffect(() => {
-    console.log('StudyUseMemo: Ive been reloaded')
-  }, [reload])
-
-  return (
-    <>
-      <button onClick={() => setReload(!reload)}>Reload StudyUseMemo</button>
-      <MainComponent />
-    </>
   )
 }
