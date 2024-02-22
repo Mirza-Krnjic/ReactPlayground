@@ -7,15 +7,15 @@ const Parent: React.FC = () => {
   const [isTriggered, setIsTriggered] = useState<boolean>(false)
 
   // CASE 1
-  const increment = () => {
-    setCount((count) => count + 1)
-  }
+  // const increment = () => {
+  //   setCount((count) => count + 1)
+  // }
 
   // CASE 2
-  // const increment = useCallback(() => {
-  //   setCount((count) => count + 1)
-  // -> What if we put "count" in the deps array?
-  // }, [])
+  const increment = useCallback(() => {
+    setCount((count) => count + 1)
+    // -> What if we put "count" in the deps array?
+  }, [])
 
   console.log('Parent is re-rendering')
 
