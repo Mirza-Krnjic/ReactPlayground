@@ -96,6 +96,48 @@ function Home() {
           Route me
         </button>
       </div>
+
+      {/* Level 6 Card */}
+      <div className="card">
+        <h2>Level 6</h2>
+        <h3>React VS Angular</h3>
+        <p>Lets explore the theore behind both frameworks</p>
+        <button
+          onClick={() => {
+            navigate('/Level6')
+          }}
+        >
+          Lets get theoretical
+        </button>
+      </div>
+
+      {/* Level 7 Card */}
+      <div className="card">
+        <h2>Level 7</h2>
+        <h3>React VS Next</h3>
+        <p>One is a library and the other a framework</p>
+        <button
+          onClick={() => {
+            navigate('/Level7')
+          }}
+        >
+          Next
+        </button>
+      </div>
+
+      {/* BONUS */}
+      <div className="card">
+        <h2>BONUS</h2>
+        <h3>Extra hints and tips</h3>
+        <p>Here you get extra learning resources</p>
+        <button
+          onClick={() => {
+            navigate('/Bonus')
+          }}
+        >
+          Next
+        </button>
+      </div>
     </>
   )
 }

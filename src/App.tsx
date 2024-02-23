@@ -6,8 +6,11 @@ import Level2 from './components/Level2'
 import Level3 from './components/Level3'
 import Level4 from './components/Level4'
 import Level5 from './components/Level5'
+import Level6 from './components/Level6'
 import StudyUseCallback from './components/Level4Documentation/StudyUseCallback'
 import StudyUseMemo from './components/Level4Documentation/StudyUseMemo'
+import Level7 from './components/Level7'
+import Bonus from './components/Bonus'
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
           <Route path="StudyUseMemo" element={<StudyUseMemo />} />
         </Route>
         <Route path="/Level5" element={<Level5 />} />
+        <Route path="/Level6" element={<Level6 />} />
+        <Route path="/Level7" element={<Level7 />} />
+        <Route path="/Bonus" element={<Bonus />} />
       </Routes>
     </Router>
   )

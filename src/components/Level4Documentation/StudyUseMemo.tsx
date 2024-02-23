@@ -14,12 +14,12 @@ export default function StudyUseMemo() {
       <button onClick={() => setReload(!reload)} style={{ margin: '15px' }}>
         Reload StudyUseMemo
       </button>
-      <MainComponent />
+      <ParentComponent />
     </>
   )
 }
 
-export function MainComponent() {
+export function ParentComponent() {
   // This is the main testing function
 
   const [list, setList] = useState<number[]>([])
