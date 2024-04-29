@@ -1,4 +1,4 @@
-# Learn React Basics 🚀
+# ReactPlayground 🚀
 
 Welcome to **Learn React Basics**! This project is designed for those transitioning from other frontend frameworks who want to dive into React development. Whether you're coming from Angular, Vue, or another framework, this template provides a straightforward setup to get you started quickly.
 
