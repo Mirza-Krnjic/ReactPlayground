@@ -1,5 +1,7 @@
 # ReactPlayground 🚀
 
+<img src="./demo-img.png" width="200"/>
+
 Welcome to **Learn React Basics**! This project is designed for those transitioning from other frontend frameworks who want to dive into React development. Whether you're coming from Angular, Vue, or another framework, this template provides a straightforward setup to get you started quickly.
 
 ## Purpose
@@ -9,9 +11,7 @@ The purpose of this project is to facilitate the learning process of React by pr
 ## Features
 
 - **React + TypeScript + Vite**: Enjoy the seamless integration of React with TypeScript and Vite, ensuring a productive and efficient development environment.
-  
 - **Hot Module Replacement (HMR)**: Experience fast refresh capabilities with either Babel or SWC, enabling you to see changes in real-time as you develop your applications.
-  
 - **ESLint Configuration**: Benefit from pre-configured ESLint rules, ensuring code consistency and best practices. Optionally, enhance linting with type-aware rules for production applications.
 
 ## Interactive Learning
